@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alon davidi">
+    <meta name="description" content="weather website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Herolo</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="head grid">
+            <header class="">
+                <h1>WEATHER FORECAST</h1>
+            </header>
+
+            <section id="section-a" class="">
+                <form class="form-inline" onsubmit="return false">
+                    <input id="input" class="form-control mr-sm-2 form-collapse" type="text" placeholder="Please enter city" aria-label="Search">
+                    <button id="btn-search" class="btn btn-primary" type="button">Search</button>
+                </form>
+
+            </section>
+        </div>
+
+
+        <main class="main grid">
+            <section id="section-b" class="">
+                <div class="cityCurrent font-weight-bold font-italic text-uppercase text-center">
+                    <h2 id="cityNameCurrent" class="h1"></h2>
+                    <span id="today"></span>
+                    <h2 id="currentCityDegrees" class="h1"></h2>
+                </div>
+            </section>
+        </main>
+
+        <section id="days" class="grid">
+            <div class="flex  font-italic font-weight-bold  text-uppercase text-center">
+                <div id="dayOne" class="block font-italic">
+                    <h3 class="names" id="nameOne"></h3>
+                    <img id="img1" src="">
+                    <h2 class="temps" id="dayOneTemps"></h2>
+                </div>
+                <div id="dayTwo" class="block  font-italic">
+                    <h3 class="names" id="nameTwo"></h3>
+                    <img id="img2" src="">
+                    <h2 class="temps" id="daytwoTemps"></h2>
+                </div>
+
+                <div id="dayThree" class="block font-italic">
+                    <h3 class="names" id="nameThree"></h3>
+                    <img id="img3" src="">
+                    <h2 class="temps" id="dayThreeTemps"></h2>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <script src="./js/main.js"></script>
+        <script src="js/jqueryData.js"></script>
+        <script src="js/nextDays.js"></script>
+</body>
+
+</html>
