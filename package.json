@@ -4,12 +4,14 @@
     "description": "Hi, my index.html, css and js files are inside the dist folder.\r Url for my website is  https://alon359.github.io/Herolo_Alon_Davidi/\r You can watch the website through this url.\r Thanks.",
     "main": "index.js",
     "scripts": {
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "sass": "node-sass -w scss/ -o dist/css/ --recursive"
     },
     "author": "",
     "license": "ISC",
     "homepage": "https://alon359.github.io/Herolo_Alon_Davidi",
     "dependencies": {
-        "gh-pages": "^2.1.1"
+        "gh-pages": "^2.1.1",
+        "node-sass": "^4.12.0"
     }
 }
