@@ -19,6 +19,7 @@ $(document).ready(() => {
             .fail(() => {
                 currentCityDegrees.innerHTML = '';
                 cityChosen.innerHTML = `Invalid search please try again`;
+                today.innerHTML = '';
                 cityChosen.style.fontSize = '3vh';
             })
 
