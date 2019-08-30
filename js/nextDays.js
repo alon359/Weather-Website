@@ -125,6 +125,7 @@ function putImages(f, s, t) {
 function searchMinTemp(indexDay, data) {
     let min, max = 0,
         arr = [];
+    console.log(data);
 
     if (indexDay == 1) {
         min = data.list[5].main.temp_min;
@@ -136,7 +137,7 @@ function searchMinTemp(indexDay, data) {
         }
         arr.push(Math.round(max).toString());
         arr.push(Math.round(min).toString());
-        arr.push(data.list[i].weather[0].main);
+        arr.push(data.list[7].weather[0].main);
         return arr;
 
     } else if (indexDay == 2) {
@@ -149,7 +150,7 @@ function searchMinTemp(indexDay, data) {
         }
         arr.push(Math.round(max).toString());
         arr.push(Math.round(min).toString());
-        arr.push(data.list[i].weather[0].main);
+        arr.push(data.list[15].weather[0].main);
         return arr;
     } else {
         min = data.list[21].main.temp_min;
@@ -162,7 +163,7 @@ function searchMinTemp(indexDay, data) {
 
         arr.push(Math.round(max).toString());
         arr.push(Math.round(min).toString());
-        arr.push(data.list[i].weather[0].main);
+        arr.push(data.list[24].weather[0].main);
 
 
 
