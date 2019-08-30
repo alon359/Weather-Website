@@ -1,0 +1,11 @@
+@mixin headers() {
+    color: #fd0;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+@mixin days() {
+    width: 210px;
+    height: 150px;
+    margin: 5px;
+}

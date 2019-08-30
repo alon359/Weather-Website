@@ -1,0 +1,15 @@
+{
+    "name": "herolo_alon",
+    "version": "1.0.0",
+    "description": "Hi, my index.html, css and js files are inside the dist folder.\r Url for my website is  https://alon359.github.io/Herolo_Alon_Davidi/\r You can watch the website through this url.\r Thanks.",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://alon359.github.io/Herolo_Alon_Davidi",
+    "dependencies": {
+        "gh-pages": "^2.1.1"
+    }
+}
