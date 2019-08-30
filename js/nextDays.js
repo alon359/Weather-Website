@@ -6,7 +6,7 @@ let cloud = 'css/cloud.png';
 let sun = 'css/sun.png';
 let cloudly = 'css/cloudy.png';
 let water = 'css/water.png';
-
+let today = getElementById('today');
 let img1 = document.getElementById('img1');
 let dayOneName = document.getElementById('nameOne');
 let dayTwo = document.getElementById('nameTwo');
@@ -61,6 +61,8 @@ function getForecast() {
         .fail(() => {
             currentCityDegrees.innerHTML = '';
             cityChosen.innerHTML = `Invalid search please try again`;
+            today.innerHTML = '';
+
             cityChosen.style.fontSize = '3vh';
         })
 }
