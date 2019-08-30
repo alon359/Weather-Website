@@ -6,7 +6,7 @@ let cloud = 'css/cloud.png';
 let sun = 'css/sun.png';
 let cloudly = 'css/cloudy.png';
 let water = 'css/water.png';
-let today = getElementById('today');
+let todayX = document.getElementById('today');
 let img1 = document.getElementById('img1');
 let dayOneName = document.getElementById('nameOne');
 let dayTwo = document.getElementById('nameTwo');
@@ -57,11 +57,13 @@ function getForecast() {
             dayTwoTemps.innerHTML = secondDayMaxMin[0] + '&#176' + '/' + secondDayMaxMin[1] + '&#176;';
             dayThreeTemps.innerHTML = thirdDayMaxMIn[0] + '&#176' + '/' + thirdDayMaxMIn[1] + '&#176;';
             putImages(firstDayMaxMin, secondDayMaxMin, thirdDayMaxMIn);
+            console.log(data);
+
         })
         .fail(() => {
             currentCityDegrees.innerHTML = '';
             cityChosen.innerHTML = `Invalid search please try again`;
-            today.innerHTML = '';
+            todayX.textContent = '';
 
             cityChosen.style.fontSize = '3vh';
         })
