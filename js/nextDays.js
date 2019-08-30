@@ -37,6 +37,7 @@ function getUpdateDays() {
 }
 
 $(document).ready(() => {
+    flexItems.style.display = 'flex'
     getForecast();
     let updatedDaysArr = getUpdateDays();
     let [firstDay, secondDay, thirdDay] = updatedDaysArr;
@@ -125,7 +126,6 @@ function putImages(f, s, t) {
 function searchMinTemp(indexDay, data) {
     let min, max = 0,
         arr = [];
-    console.log(data);
 
     if (indexDay == 1) {
         min = data.list[5].main.temp_min;

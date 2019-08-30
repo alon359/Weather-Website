@@ -4,12 +4,13 @@ let fiveDaysForcastApi = 'https://api.openweathermap.org/data/2.5/forecast?q=ber
 let currentWeatherApi = 'https://api.openweathermap.org/data/2.5/weather?q=berlin&mode=json&units=metric&appid=ea4d23eda1152635a92fdc97c12e96ea';
 let today = document.getElementById('today');
 let input, cityName;
-
+let flexItems = document.getElementById('flexBox');
 $(document).ready(() => {
     $('#btn-search').on('click', () => {
         fiveDaysForcastApi = 'https://api.openweathermap.org/data/2.5/forecast?q=' + $('#input').val() + '&mode=json&units=metric&appid=ea4d23eda1152635a92fdc97c12e96ea';
         currentWeatherApi = 'https://api.openweathermap.org/data/2.5/weather?q=' + $('#input').val() + '&mode=json&units=metric&appid=ea4d23eda1152635a92fdc97c12e96ea';
         $.getJSON(currentWeatherApi, (data) => {
+                flexItems.style.display = 'flex'
                 today.textContent = ' today';
                 input = $('#input').val();
                 cityChosen.innerHTML = $('#input').val();
@@ -21,6 +22,7 @@ $(document).ready(() => {
                 cityChosen.innerHTML = `Invalid search please try again`;
                 today.innerHTML = '';
                 cityChosen.style.fontSize = '3vh';
+                flexItems.style.display = 'none'
             })
 
         $.getJSON(fiveDaysForcastApi, (data) => {
@@ -32,6 +34,8 @@ $(document).ready(() => {
                 currentCityDegrees.innerHTML = '';
                 cityChosen.innerHTML = `Invalid search please try again`;
                 cityChosen.style.fontSize = '3vh';
+                flexItems.style.display = 'none'
+
             })
 
     })

@@ -33,7 +33,7 @@
     font-size: 2px;
     max-width: 130px; } }
 
-html body {
+body {
   background-image: url("./coast.jpg");
   background-repeat: no-repeat;
   background-size: cover;
