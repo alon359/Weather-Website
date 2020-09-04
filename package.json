@@ -12,6 +12,6 @@
     "homepage": "https://alon359.github.io/Herolo_Alon_Davidi",
     "dependencies": {
         "gh-pages": "^2.1.1",
-        "node-sass": "^4.12.0"
+        "node-sass": "^4.13.1"
     }
 }
